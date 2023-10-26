@@ -4,19 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Умнее всех</title>
   <style>
+    @font-face {
+      font-family: 'AGFriquer';
+      src: url('https://client.tina.irsapp.ru/assets/fonts/AGFriquer.otf');
+    }
     * {
       padding: 0;
       margin: 0;
       box-sizing: border-box;
     }
+    div, p, span, h1, h2, h3, h4, img {
+      -moz-user-select: -moz-none;
+      -o-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+      font-family: AGFriquer;
+    }
+    body::before {
+      content: '';
+      background: url('https://client.tina.irsapp.ru/assets/images/bg.jpg') center no-repeat;
+      background-size: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -2;
+    }
+    #root {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      color: white;
+      font-size: 30px;
+    }
   </style>
 </head>
 
 <body>
-  <div
-    style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100vh; background-color: black; color: white; font-size: 28px;">
+  <div id="root">
     Игра доступна только с мобильных устройств
   </div>
 </body>

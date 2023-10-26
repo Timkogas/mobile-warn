@@ -1,0 +1,9 @@
+{
+  "homepage": "https://Timkogas.github.io/mobile-warn",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
